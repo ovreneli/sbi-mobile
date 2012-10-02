@@ -15,7 +15,7 @@
       panel = (function() {
         var container = document.createElement('div');
         container.innerHTML =
-          '<div style="display:none;position:fixed;left:0;bottom:0;width:100%;padding:10px;background:#fcf8e3;">画像をタップしてください。<button id="' + cancelId + '">キャンセル</button></div>';
+          '<div style="display:none;position:fixed;left:0;bottom:0;width:100%;padding:10px;background:#fcf8e3;z-index:10000;">画像をタップしてください。<button id="' + cancelId + '">キャンセル</button></div>';
         return container.firstChild;
       })(),
       start = function() {
